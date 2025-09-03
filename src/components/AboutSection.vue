@@ -1,12 +1,33 @@
 <template>
-  <section class="py-16 px-6 bg-gray-900">
-    <h2 class="text-3xl font-bold mb-4">Sobre mi</h2>
-    <p class="text-lg max-w-2xl">
-      I’m a software developer passionate about building efficient, scalable, and user-friendly applications. 
-      I have experience with Vue.js, Tailwind, PostgreSQL, Oracle, and backend frameworks like Nest.js.
-    </p>
-  </section>
-</template>
+  <section class="py-16 px-6 bg-gray-900 text-gray-100">
+    <div class="max-w-4xl mx-auto">
+      <!-- Título -->
+      <h2 class="lg:text-4xl text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">
+        Sobre mí
+      </h2>
 
-<script setup>
-</script>
+      <!-- Texto -->
+      <p class="leading-relaxed text-gray-300 lg:text-lg">
+        Hola, mi nombre es <span class="font-semibold text-white">Sergio Manuel Cortés Ramos</span>. Soy una
+        persona apasionada por <span class="text-white font-semibold">resolver problemas</span> y siempre busco la
+        manera de <span class="text-white font-semibold">ayudar a los demás</span>.
+        Disfruto <span class="text-white font-semibold">cantar y escuchar música</span>, y tengo facilidad para <span
+          class="text-white font-semibold">comunicarme en inglés</span>, lo que me permite aprender y conectar con
+        personas de diferentes culturas.
+        <br /><br />
+        Me gusta <span class="text-white font-semibold">salir a comer, pasear y hacer ejercicio</span> con mi novia y mi familia, y en
+        mis ratos libres disfruto de los <span class="text-white font-semibold">videojuegos</span> y de ver <span
+          class="text-white font-semibold">películas</span>  románticas, de misterio, terror y ciencia ficción.
+        Mis objetivos de vida incluyen <span class="text-white font-semibold">construir mi propia casa</span>, <span
+          class="text-white font-semibold">casarme en Hawái</span>, tener <span
+          class="text-white font-semibold">dos hijos</span> y eventualmente <span
+          class="text-white font-semibold">administrar mi propia empresa</span>.
+        <br /><br />
+        En resumen, busco combinar mis <span class="text-white font-semibold">habilidades, pasiones y valores</span>
+        para crecer como persona y profesional, disfrutando cada momento y dejando un impacto positivo en quienes me
+        rodean.
+      </p>
+    </div>
+  </section>
+
+</template>

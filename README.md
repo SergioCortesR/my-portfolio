@@ -2,7 +2,7 @@
 ---
 
 ## 🛠️ Technologies
-- **Frontend:** HTML, CSS (TailwindCSS), JavaScript  
+- **Frontend:** HTML, CSS (TailwindCSS), JavaScript, Vue
 - **Backend Experience:** Nest.js, JSP, Laravel 
 - **Databases:** PostgreSQL, Oracle, SQL Server, Maria DB 
 - **Tools:** Git, GitHub, Vercel, NetBeans, Visual Studio  
