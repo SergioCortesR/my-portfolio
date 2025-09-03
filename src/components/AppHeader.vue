@@ -6,7 +6,7 @@
 
       <!-- Links -->
       <ul class="hidden md:flex space-x-6 text-gray-300 font-medium">
-        <li><a href="#hero" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#hero" class="hover:text-blue-500">Inicio</a></li>
         <li><a href="#experience" class="hover:text-blue-500">Experiencia</a></li>
         <li><a href="#about" class="hover:text-blue-500">Sobre mi</a></li>
         <li><a href="#skills" class="hover:text-blue-500">Habilidades</a></li>
