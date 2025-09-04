@@ -4,7 +4,7 @@
 <template>
   <section
     class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 bg-gray-900 text-white gap-8 pt-16 md:pt-24">
-    <div class="flex flex-col lg:flex-row items-center justify-center px-6 bg-gray-800 text-white p-10 m-10 rounded-4xl">
+    <div class="flex flex-col lg:flex-row items-center justify-center px-2 bg-gray-800 text-white py-5 lg:m-10 rounded-4xl m-6">
       <!-- Texto -->
       <div class="lg:w-8/12 text-center lg:text-right lg:px-28">
         <h1 class="text-5xl md:text-6xl font-bold mb-4 pb-2">
@@ -35,7 +35,7 @@
 
       <!-- Imagen -->
       <div class="lg:w-4/12 flex justify-center p-5">
-        <img src="https://cdn-photos.occ.com.mx/images/photos/300x300/27e/27ec5447925e4407a003d62bbaaef6bc.jpg"
+        <img src="https://www.dropbox.com/scl/fi/ipzb7ib2yfno6ohqbbxf6/comiendo_en_los_pibes.jpg?rlkey=4xtadavrmierrvaixk9dt6byq&raw=1"
           alt="Sergio Cortés" class="rounded-full shadow-2xl shadow-black w-64 md:w-80 lg:w-96 object-cover p-5">
       </div>
     </div>

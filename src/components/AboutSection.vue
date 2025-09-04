@@ -1,6 +1,6 @@
 <template>
-  <section class="py-16 px-6 bg-gray-900 text-gray-100">
-    <div class="max-w-4xl mx-auto">
+  <section class="py-10 px-6 bg-gray-900 flex flex-col items-center justify-center">
+    <div class="w-10/12 md:w-3/5 2xl:w-6/12">
       <!-- Título -->
       <h2 class="lg:text-4xl text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">
         Sobre mí
