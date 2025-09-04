@@ -1,6 +1,6 @@
 <template>
   <section class="py-10 px-6 bg-gray-800 flex flex-col items-center justify-center">
-    <div class="w-10/12 lg:w-1/3">
+    <div class="w-10/12 md:w-3/5 2xl:w-1/3">
       <h2 class="lg:text-4xl text-2xl font-bold mb-4 -ml-5">Experiencia y escolaridad</h2>
       <ol class="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">
         <li class="mb-10 ms-10">
