@@ -7,43 +7,33 @@
       </h2>
 
       <!-- Texto -->
-<div class="space-y-6">
-  <p class="leading-relaxed text-gray-300 lg:text-lg">
-    Hola, mi nombre es <span class="font-semibold text-white">Sergio Manuel Cortés Ramos</span>. Soy una
-    persona apasionada por <span class="text-white font-semibold">resolver problemas</span> y siempre busco la
-    manera de <span class="text-white font-semibold">ayudar a los demás</span>.
-    Disfruto <span class="text-white font-semibold">cantar y escuchar música</span>, y tengo facilidad para <span
-      class="text-white font-semibold">comunicarme en inglés</span>, lo que me permite aprender y conectar con
-    personas de diferentes culturas.
-    <br /><br />
-    Me gusta <span class="text-white font-semibold">salir a comer, pasear y hacer ejercicio</span> con mi novia y mi familia, y en
-    mis ratos libres disfruto de los <span class="text-white font-semibold">videojuegos</span> y de ver <span
-      class="text-white font-semibold">películas</span> románticas, de misterio, terror y ciencia ficción.
-    Mis objetivos de vida incluyen <span class="text-white font-semibold">construir mi propia casa</span>, <span
-      class="text-white font-semibold">casarme en Hawái</span>, tener <span
-      class="text-white font-semibold">dos hijos</span> y eventualmente <span
-      class="text-white font-semibold">administrar mi propia empresa</span>.
-    <br /><br />
-    En resumen, busco combinar mis <span class="text-white font-semibold">habilidades, pasiones y valores</span>
-    para crecer como persona y profesional, disfrutando cada momento y dejando un impacto positivo en quienes me
-    rodean.
-  </p>
+      <div class="space-y-6">
+        <p class="leading-relaxed text-gray-300 lg:text-lg">
+          Hola, mi nombre es <span class="font-semibold text-white">Sergio Manuel Cortés Ramos</span>. Soy una
+          persona apasionada por <span class="text-white font-semibold">resolver problemas</span> y siempre busco la
+          manera de <span class="text-white font-semibold">ayudar a los demás</span>.
+          Disfruto <span class="text-white font-semibold">cantar y escuchar música</span>, y tengo facilidad para <span
+            class="text-white font-semibold">comunicarme en inglés</span>, lo que me permite aprender y conectar con
+          personas de diferentes culturas.
+          <br /><br />
+          Me gusta <span class="text-white font-semibold">salir a comer, pasear y hacer ejercicio</span> con mi novia y
+          mi familia, y en
+          mis ratos libres disfruto de los <span class="text-white font-semibold">videojuegos</span> y de ver <span
+            class="text-white font-semibold">películas</span> románticas, de misterio, terror y ciencia ficción.
+          Mis objetivos de vida incluyen <span class="text-white font-semibold">construir mi propia casa</span>, <span
+            class="text-white font-semibold">casarme en Hawái</span>, tener <span class="text-white font-semibold">dos
+            hijos</span> y eventualmente <span class="text-white font-semibold">administrar mi propia empresa</span>.
+          <br /><br />
+          En resumen, busco combinar mis <span class="text-white font-semibold">habilidades, pasiones y valores</span>
+          para crecer como persona y profesional, disfrutando cada momento y dejando un impacto positivo en quienes me
+          rodean.
+        </p>
+        <div class="flex justify-center">
+          <img src="\images\personal\checo-parking-lot.jpg" alt="Foto de Sergio Cortés"
+            class="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 object-cover w-full max-w-sm h-80" />
+        </div>
 
-  <!-- Galería de imágenes -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <img src="\images\personal\checo-fut.jpg"
-      alt="playing soccer"
-      class="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 object-cover w-full h-64" />
-
-    <img src="\images\personal\checo-parking-lot.jpg"
-      alt="in the parking lot"
-      class="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 object-cover w-full h-64" />
-
-    <img src="\images\personal\checo-y-toruk.jpg"
-      alt="running and sunset"
-      class="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 object-cover w-full h-64" />
-  </div>
-</div>
+      </div>
 
     </div>
   </section>

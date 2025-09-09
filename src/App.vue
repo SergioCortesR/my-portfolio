@@ -3,9 +3,9 @@
     <AppHeader id="header" class="scroll-mt-14"/>
     <HeroSection id="hero" class="scroll-mt-14" />
     <ExperienceSection id="experience" class="scroll-mt-14" />
-    <AboutSection id="about" class="scroll-mt-14" />
-    <ProjectList id="projects" class="scroll-mt-14" />
     <SkillList id="skills" class="scroll-mt-14" />
+    <ProjectList id="projects" class="scroll-mt-14" />
+    <AboutSection id="about" class="scroll-mt-14" />
     <AppFooter id="footer" class="scroll-mt-14" />
   </div>
 </template>
