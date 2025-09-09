@@ -6,46 +6,55 @@
 
       <!-- Links -->
       <ul class="hidden md:flex space-x-6 text-gray-300 font-medium">
-        <li><a href="#hero" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Inicio</a></li>
-        <li><a href="#experience"
-            class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Experiencia</a></li>
-        <li><a href="#about" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Sobre mi</a>
+        <li>
+          <a href="#hero" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Inicio</a>
         </li>
-        <li><a href="#projects" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Proyectos</a>
+        <li>
+          <a href="#experience"
+            class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Experiencia</a>
         </li>
-        <li><a href="#skills" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Habilidades</a>
+        <li>
+          <a href="#skills" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Habilidades</a>
         </li>
-        <li><a href="https://wa.me/524496050497" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Contáctame</a>
+        <li>
+          <a href="#projects" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Proyectos</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Sobre mi</a>
+        </li>
+        <li>
+          <a href="https://wa.me/524496050497"
+            class="hover:text-white hover:border-2 rounded-2xl lg:p-2 border-gray-700">Contáctame</a>
         </li>
       </ul>
       <!-- Botón para móviles -->
-      <button class="lg:hidden md:hidden text-white focus:outline-none" @click.stop="displayList">
+      <button class="lg:hidden md:hidden text-white focus:outline-none text-3xl" @click.stop="displayList">
         ☰
       </button>
       <div v-show="flagList" ref="menuRef"
-        class="lg:hidden md:hidden absolute top-14 right-2 z-50 w-48 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+        class="lg:hidden md:hidden absolute top-14 right-2 z-50 w-1/2 rounded-lg bg-gray-700 border-gray-300 text-white">
         <a href="#hero"
-          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium border-b border-gray-200 rounded-t-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium border-b focus:z-10 focus:ring-2 border-gray-400 hover:bg-gray-600 hover:text-white focus:ring-gray-500 focus:text-white">
           Inicio
         </a>
         <a href="#experience"
-          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium border-b focus:z-10 focus:ring-2 border-gray-400 hover:bg-gray-600 hover:text-white focus:ring-gray-500 focus:text-white">
           Experiencia
         </a>
-        <a href="#about"
-          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
-          Sobre mi
-        </a>
         <a href="#skills"
-          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium rounded-b-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium border-b focus:z-10 focus:ring-2 border-gray-400 hover:bg-gray-600 hover:text-white focus:ring-gray-500 focus:text-white">
           Habilidades
         </a>
         <a href="#projects"
-          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium rounded-b-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium border-b focus:z-10 focus:ring-2 border-gray-400 hover:bg-gray-600 hover:text-white focus:ring-gray-500 focus:text-white">
           Proyectos
         </a>
+        <a href="#about"
+          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium border-b focus:z-10 focus:ring-2 border-gray-400 hover:bg-gray-600 hover:text-white focus:ring-gray-500 focus:text-white">
+          Sobre mi
+        </a>
         <a href="https://wa.me/524496050497"
-          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium rounded-b-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+          class="h-16 relative inline-flex items-center w-full px-4 py-2  font-medium focus:z-10 focus:ring-2 border-gray-400 hover:bg-gray-600 hover:text-white focus:ring-gray-500 focus:text-white">
           Contáctame
         </a>
       </div>
