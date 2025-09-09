@@ -1,4 +1,4 @@
-
+Get into the [app](https://sergio-cortes-cv.vercel.app/) to see this project running
 ---
 
 ## 🛠️ Technologies
