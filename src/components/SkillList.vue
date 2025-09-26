@@ -23,6 +23,8 @@
 const skills = [
     { name: 'Vue.js', icon: '/images/icons/vue-logo.png' },
     { name: 'Laravel', icon: '/images/icons/laravel-logo.png' },
+    { name: 'React', icon: '/images/icons/react-logo.png' },
+    { name: '.Net', icon: '/images/icons/.net-logo.png' },
     { name: 'GitHub', icon: '/images/icons/github-logo.png' },
     { name: 'MySQL', icon: '/images/icons/mysql-logo.png' },
     { name: 'Oracle DB', icon: '/images/icons/oracleDB-logo.png' },
@@ -33,5 +35,7 @@ const skills = [
     { name: 'Office', icon: '/images/icons/office-logo.png' },
     { name: 'Inglés', icon: '/images/icons/english-logo.png' },
     { name: 'Php', icon: '/images/icons/php-logo.png' },
+    { name: 'Postman', icon: '/images/icons/postman-logo.png' },
+    { name: 'Web browser', icon: '/images/icons/web-browser-logo.png' },
 ]
 </script>
