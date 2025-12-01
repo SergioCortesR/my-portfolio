@@ -82,8 +82,7 @@
 
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <span class="text-sm text-gray-400">
-                    © {{ currentYear }} <span class="font-semibold text-white">Sergio Cortés</span>. All rights
-                    reserved.
+                    © {{ currentYear }} <span class="font-semibold text-white">Sergio Cortés</span>.
                 </span>
                 <span class="text-sm text-gray-500 mt-4 md:mt-0">
                     Made with <span class="text-red-500">❤️</span> using Vue.js & Tailwind CSS
