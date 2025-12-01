@@ -1,6 +1,6 @@
 <template>
   <section
-    class="py-20 px-6 bg-gradient-to-b from-gray-900 via-gray-900 via-gray-800 to-gray-800 flex flex-col items-center justify-center relative overflow-hidden">
+    class="py-20 px-6 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 flex flex-col items-center justify-center relative overflow-hidden">
     <!-- Efectos decorativos de fondo -->
     <div class="absolute inset-0 opacity-5">
       <div class="absolute top-1/4 right-0 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
@@ -20,10 +20,10 @@
         </p>
       </div>
 
-      <!-- Cards de proyectos -->
-      <div class="md:flex md:flex-row md:justify-center gap-6">
+      <!-- Grid de proyectos responsivo -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         <div v-for="project in projects" :key="project.title"
-          class="m-5 max-w-sm rounded-xl shadow-lg bg-gray-900/80 backdrop-blur-sm border border-gray-700 overflow-hidden group hover:border-indigo-500 hover:shadow-indigo-500/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          class="max-w-sm mx-auto w-full rounded-xl shadow-lg bg-gray-900/80 backdrop-blur-sm border border-gray-700 overflow-hidden group hover:border-indigo-500 hover:shadow-indigo-500/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
           <a :href="project.link" target="_blank" v-if="project.link">
             <div class="relative overflow-hidden">
               <img class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
@@ -66,6 +66,13 @@ const projects = [
     image: '\\images\\projects\\colp.jpg',
     link: 'https://colp.cceo.io/login',
     technologies: ['Laravel', 'Vue.js', 'PHP', 'MySQL']
+  },
+  {
+    title: 'Lola Credits - Sistema de Préstamos',
+    description: 'Aplicación web de gestión de préstamos desarrollada con <b>ASP.NET Core y Vue.js</b>, implementando arquitectura MVC con buenas prácticas de desarrollo. El backend está desplegado en <b>Fly.io</b> utilizando SQLite, mientras que el frontend se encuentra en <b>Vercel</b>. Permite administrar préstamos, clientes, pagos y reportes de manera eficiente y segura.',
+    image: '\\images\\projects\\lolacredits.png',
+    link: 'https://lolacredits.vercel.app/',
+    technologies: ['ASP.NET Core', 'Vue.js', 'SQLite', 'MVC']
   },
   {
     title: 'Sistema escolar Greenfield',

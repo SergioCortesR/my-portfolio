@@ -1,6 +1,6 @@
 <template>
     <section
-        class="py-20 px-6 bg-gradient-to-b from-gray-800 via-gray-800 via-gray-900 to-gray-900 flex flex-col items-center justify-center relative overflow-hidden">
+        class="py-20 px-6 bg-gradient-to-b from-gray-800 via-gray-800 to-gray-900 flex flex-col items-center justify-center relative overflow-hidden">
         <!-- Efecto de fondo decorativo -->
         <div class="absolute inset-0 opacity-10">
             <div
