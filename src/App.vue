@@ -1,12 +1,14 @@
 <template>
-  <div class="bg-gray-900 text-gray-50 font-sans">
-    <AppHeader id="header" class="scroll-mt-14"/>
-    <HeroSection id="hero" class="scroll-mt-14" />
-    <ExperienceSection id="experience" class="scroll-mt-14" />
-    <SkillList id="skills" class="scroll-mt-14" />
-    <ProjectList id="projects" class="scroll-mt-14" />
-    <AboutSection id="about" class="scroll-mt-14" />
-    <AppFooter id="footer" class="scroll-mt-14" />
+  <div class="bg-[var(--bg-base)] text-[var(--text-primary)]">
+    <AppHeader id="header" class="scroll-mt-20" />
+    <main>
+      <HeroSection id="hero" class="scroll-mt-20" />
+      <ExperienceSection id="experience" class="scroll-mt-20" />
+      <SkillList id="skills" class="scroll-mt-20" />
+      <ProjectList id="projects" class="scroll-mt-20" />
+      <AboutSection id="about" class="scroll-mt-20" />
+    </main>
+    <AppFooter id="footer" class="scroll-mt-20" />
   </div>
 </template>
 
@@ -18,4 +20,7 @@ import AppHeader from './components/AppHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import ProjectList from './components/ProjectList.vue'
 import SkillList from './components/SkillList.vue'
+import { useGsap } from './composables/useGsap.js'
+
+useGsap()
 </script>
