@@ -1,92 +1,91 @@
 <template>
-  <section
-    class="py-20 px-6 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 flex flex-col items-center justify-center relative overflow-hidden">
-    <!-- Efectos decorativos de fondo -->
-    <div class="absolute inset-0 opacity-5">
-      <div class="absolute top-1/4 right-0 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
-      <div class="absolute bottom-1/4 left-0 w-96 h-96 bg-indigo-600 rounded-full mix-blend-multiply filter blur-3xl">
-      </div>
-    </div>
+  <section class="section-shell">
+    <div class="container mx-auto max-w-6xl">
+      <header class="reveal mb-14 max-w-2xl">
+        <span class="section-eyebrow">{{ t.projects.title }}</span>
+        <h2 class="section-title">{{ t.projects.subtitle }}</h2>
+      </header>
 
-    <div class="relative z-10 w-full max-w-7xl">
-      <!-- Título -->
-      <div class="text-center mb-16">
-        <h2
-          class="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-white via-indigo-200 to-purple-200 bg-clip-text text-transparent">
-          Proyectos
-        </h2>
-        <p class="text-gray-400 text-lg">
-          Algunos de mis trabajos más destacados
-        </p>
-      </div>
-
-      <!-- Grid de proyectos responsivo -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-        <div v-for="project in projects" :key="project.title"
-          class="max-w-sm mx-auto w-full rounded-xl shadow-lg bg-gray-900/80 backdrop-blur-sm border border-gray-700 overflow-hidden group hover:border-indigo-500 hover:shadow-indigo-500/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-          <a :href="project.link" target="_blank" v-if="project.link">
-            <div class="relative overflow-hidden">
-              <img class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-                :src="project.image" :alt="project.title" />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              </div>
-            </div>
+      <div class="grid md:grid-cols-2 gap-5">
+        <article
+          v-for="(project, i) in t.projects.items"
+          :key="project.title"
+          class="surface surface-interactive group overflow-hidden flex flex-col reveal"
+          :data-delay="Math.min(i + 1, 5)"
+        >
+          <a
+            :href="project.link || '#'"
+            :target="project.link ? '_blank' : undefined"
+            :rel="project.link ? 'noopener' : undefined"
+            class="relative block aspect-[16/9] overflow-hidden border-b border-[var(--border-subtle)]"
+            :aria-label="project.title"
+          >
+            <img
+              :src="project.image"
+              :alt="project.title"
+              loading="lazy"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              @error="onImageError($event, project.title)"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[var(--bg-base)] via-transparent to-transparent opacity-80"
+            ></div>
+            <span
+              v-if="!project.link"
+              class="absolute top-3 right-3 px-2 py-1 text-[10px] uppercase tracking-wider rounded-md bg-[var(--bg-base)]/80 text-[var(--text-muted)] border border-[var(--border-subtle)]"
+            >{{ t.projects.privateProject }}</span>
           </a>
-          <div v-else class="relative overflow-hidden">
-            <img class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-              :src="project.image" :alt="project.title" />
-          </div>
 
-          <div class="p-6">
-            <h5 class="mb-3 text-2xl font-bold tracking-tight text-white group-hover:text-indigo-400 transition-colors">
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-xl font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
               {{ project.title }}
-            </h5>
-            <p class="mb-4 font-normal text-gray-400 leading-relaxed">
-              <span v-html="project.description"></span>
+            </h3>
+            <p class="mt-2 text-sm text-[var(--text-secondary)] leading-relaxed flex-1 text-pretty">
+              {{ project.description }}
             </p>
-            <div v-if="project.technologies" class="flex flex-wrap gap-2 mb-4">
-              <span v-for="tech in project.technologies" :key="tech"
-                class="px-3 py-1 text-xs font-medium bg-indigo-600/20 text-indigo-300 rounded-full border border-indigo-500/30">
-                {{ tech }}
-              </span>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span
+                v-for="tech in project.technologies"
+                :key="tech"
+                class="px-2 py-0.5 text-xs rounded-md bg-[var(--bg-base)] border border-[var(--border-subtle)] text-[var(--text-secondary)] font-mono"
+              >{{ tech }}</span>
             </div>
+            <a
+              v-if="project.link"
+              :href="project.link"
+              target="_blank"
+              rel="noopener"
+              class="mt-5 inline-flex items-center gap-1 text-sm text-[var(--accent)] hover:text-[var(--text-primary)] transition-colors w-fit"
+            >
+              {{ t.projects.viewProject }}
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-const projects = [
-  {
-    title: 'Contribución a COLP ERP agropecuario',
-    description: 'Aplicación web basada en <b>Laravel y Vue</b> para empleados y administradores que centraliza la gestión de vacantes, tareas, mensajes, notificaciones, productos, préstamos, nómina y equipos, mejorando la comunicación y el control de los módulos empresariales. Proyecto perteneciente a <a href="https://cceo.com.mx/" class="hover:text-blue-400 transition-colors"><b>(CCEO software development)</b></a>',
-    image: '\\images\\projects\\colp.jpg',
-    link: 'https://colp.cceo.io/login',
-    technologies: ['Laravel', 'Vue.js', 'PHP', 'MySQL']
-  },
-  {
-    title: 'Lola Credits - Sistema de Préstamos',
-    description: 'Aplicación web de gestión de préstamos desarrollada con <b>ASP.NET Core y Vue.js</b>, implementando arquitectura MVC con buenas prácticas de desarrollo. El backend está desplegado en <b>Fly.io</b> utilizando SQLite, mientras que el frontend se encuentra en <b>Vercel</b>. Permite administrar préstamos, clientes, pagos y reportes de manera eficiente y segura.',
-    image: '\\images\\projects\\lolacredits.png',
-    link: 'https://lolacredits.vercel.app/',
-    technologies: ['ASP.NET Core', 'Vue.js', 'SQLite', 'MVC']
-  },
-  {
-    title: 'Sistema escolar Greenfield',
-    description: 'Sistema escolar diseñada en <b>Java y JFrame</b> que centraliza la gestión de alumnos, grupos, colegiaturas, usuarios, pagos, facturas y parientes, facilitando la administración académica y financiera. Permite a la institución llevar un seguimiento organizado y eficiente, mejorando la comunicación y control dentro del entorno escolar.',
-    image: '\\images\\projects\\login_greenfield.jpg',
-    link: null,
-    technologies: ['Java', 'JFrame', 'MySQL']
-  },
-  {
-    title: 'Contribución en Estudio Plus',
-    description: 'Proyecto web basado en <b>React y Node.js</b> enfocado en el aprendizaje profundo para matemáticas dirigido a estudiantes de educación primaria y media. Permite personalizar el contenido, así como las preguntas y respuestas, para adaptarse a diferentes necesidades educativas. Este proyecto busca mejorar la comprensión y el rendimiento de los estudiantes de manera interactiva, respetando la propiedad de <a href="https://apollo-solutions.com.mx/" class="hover:text-blue-400 transition-colors"><b>Apollo Solutions</b></a>.',
-    image: '\\images\\projects\\apollo-estudio-plus.jpg',
-    link: 'https://estudio-plus.com/login',
-    technologies: ['React', 'Node.js', 'MongoDB']
-  }
-]
+import { useI18n } from '../i18n'
+
+const { t } = useI18n()
+
+function onImageError(event, title) {
+  const img = event.target
+  if (img.dataset.fallback === '1') return
+  img.dataset.fallback = '1'
+  const initial = (title?.trim()?.[0] ?? '?').toUpperCase()
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'>
+    <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='%23528bff'/><stop offset='100%' stop-color='%23c678dd'/>
+    </linearGradient></defs>
+    <rect width='320' height='180' fill='url(%23g)'/>
+    <text x='50%' y='54%' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-size='80' font-weight='700' fill='white' fill-opacity='0.9'>${initial}</text>
+  </svg>`
+  img.src = `data:image/svg+xml;utf8,${svg.replace(/\n\s*/g, '')}`
+}
 </script>

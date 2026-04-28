@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Lola Credits — Loan management">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0b2e"/>
+      <stop offset="100%" stop-color="#2d1b4e"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(167,139,250,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#grid)"/>
+
+  <!-- Glows -->
+  <circle cx="120" cy="80" r="120" fill="#a78bfa" opacity="0.22"/>
+  <circle cx="540" cy="300" r="140" fill="#f472b6" opacity="0.18"/>
+
+  <!-- Credit cards stacked -->
+  <g transform="translate(340 150)">
+    <!-- Back card -->
+    <g transform="rotate(-8) translate(0 0)">
+      <rect width="220" height="130" rx="14" fill="url(#card2)" stroke="#1a0b2e" stroke-width="2"/>
+      <circle cx="190" cy="110" r="14" fill="#fbcfe8" opacity="0.6"/>
+      <circle cx="172" cy="110" r="14" fill="#f9a8d4" opacity="0.6"/>
+      <text x="20" y="34" font-family="Inter,Arial,sans-serif" font-size="10" letter-spacing="2" fill="#fdf2f8">LOLA CREDITS</text>
+      <text x="20" y="80" font-family="JetBrains Mono,monospace" font-size="14" letter-spacing="3" fill="#fdf2f8">•••• 4821</text>
+    </g>
+    <!-- Front card -->
+    <g transform="rotate(6) translate(40 28)">
+      <rect width="220" height="130" rx="14" fill="url(#card)" stroke="#1a0b2e" stroke-width="2"/>
+      <rect x="20" y="46" width="36" height="26" rx="4" fill="#fde68a"/>
+      <rect x="22" y="48" width="32" height="22" rx="2" fill="none" stroke="#92400e" stroke-width="1"/>
+      <line x1="22" y1="56" x2="54" y2="56" stroke="#92400e" stroke-width="1"/>
+      <line x1="38" y1="48" x2="38" y2="70" stroke="#92400e" stroke-width="1"/>
+      <text x="20" y="34" font-family="Inter,Arial,sans-serif" font-size="10" letter-spacing="2" fill="#ede9fe">CREDIT</text>
+      <text x="68" y="68" font-family="JetBrains Mono,monospace" font-size="14" letter-spacing="3" fill="#ede9fe">•••• 0497</text>
+      <text x="20" y="106" font-family="Inter,Arial,sans-serif" font-size="9" fill="#ddd6fe">CARDHOLDER</text>
+      <text x="20" y="118" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" fill="#fafafa">SERGIO C.</text>
+      <text x="140" y="106" font-family="Inter,Arial,sans-serif" font-size="9" fill="#ddd6fe">VALID</text>
+      <text x="140" y="118" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" fill="#fafafa">04/29</text>
+    </g>
+  </g>
+
+  <!-- Coins -->
+  <g transform="translate(80 230)">
+    <ellipse cx="40" cy="60" rx="36" ry="10" fill="#1a0b2e" opacity="0.5"/>
+    <circle cx="40" cy="40" r="32" fill="#fbbf24" stroke="#92400e" stroke-width="2"/>
+    <circle cx="40" cy="40" r="24" fill="none" stroke="#92400e" stroke-width="1.5"/>
+    <text x="40" y="48" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" fill="#92400e">$</text>
+    <circle cx="92" cy="58" r="20" fill="#fbbf24" stroke="#92400e" stroke-width="2"/>
+    <text x="92" y="64" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="800" fill="#92400e">$</text>
+  </g>
+
+  <!-- Title -->
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="40" y="58" font-size="13" letter-spacing="6" fill="url(#acc)">PRÉSTAMOS · MVC</text>
+    <text x="40" y="100" font-size="34" font-weight="800" fill="#faf5ff">Lola Credits</text>
+    <text x="40" y="126" font-size="14" fill="#ddd6fe">ASP.NET Core · Vue.js · SQLite</text>
+  </g>
+
+  <!-- Chips -->
+  <g font-family="JetBrains Mono,Menlo,monospace" font-size="11">
+    <g transform="translate(440 28)">
+      <rect width="76" height="22" rx="11" fill="rgba(167,139,250,0.18)" stroke="rgba(167,139,250,0.55)"/>
+      <text x="38" y="15" text-anchor="middle" fill="#ddd6fe">Fly.io</text>
+    </g>
+    <g transform="translate(524 28)">
+      <rect width="76" height="22" rx="11" fill="rgba(244,114,182,0.18)" stroke="rgba(244,114,182,0.55)"/>
+      <text x="38" y="15" text-anchor="middle" fill="#fbcfe8">Vercel</text>
+    </g>
+  </g>
+</svg>

@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="/images/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Sergio Cortés</title>
+  <meta name="description"
+    content="Portafolio profesional de Sergio Manuel Cortés Ramos, ingeniero de software full-stack." />
+  <meta name="theme-color" content="#282c34" />
+  <meta property="og:title" content="Sergio Cortés — Software Engineer" />
+  <meta property="og:description"
+    content="Portafolio profesional · Java empresarial · Vue.js · IA aplicada al desarrollo." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <title>Sergio Cortés — Software Engineer</title>
+  <script>
+    // Pre-paint theme init to avoid FOUC and ensure data-theme is set before Vue mounts
+    (function () {
+      try {
+        var stored = localStorage.getItem('portfolio-theme');
+        var theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.style.colorScheme = theme;
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 
 <body>
